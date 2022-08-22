@@ -1,0 +1,465 @@
+body{
+    margin: 0 auto;
+    width: 100%;
+    font-size: 16px;
+    height:100%;
+    color:rgb(204, 166, 166);
+    white-space: normal;
+    word-break: normal;
+    word-wrap: break-word;
+    line-height: 1;
+}
+/* 헤더 시장 */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 115px;
+    background: rgba(0,0,0,0.7);
+    z-index: 100;
+}
+header > .header_area{
+    width: 1500px;
+    margin: 0 auto;
+    position: relative;
+}
+header > .header_area > h1{
+    float: left;
+    padding: 45px 0 0;
+}
+header > .header_area > h1 > a{
+    background: url(../imgs/main_icon.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    width: 85px;
+    height: 85px;
+    font-size: 0;
+}
+header > .header_area > .header_cont{
+    float: right;
+}
+header > .header_area > .header_cont > .info{
+    float: right;
+    width:200px;
+    /* outline: 1px solid red; */
+}
+header > .header_area > .header_cont > .info > li{
+    float: left;
+    width:48%;
+    /* outline: 1px solid red; */
+    list-style: none;
+    text-align: center;
+    margin-top: -5px;
+}
+header > .header_area > .header_cont > .info > li:first-child{
+    border-right: 1px solid white;
+}
+header > .header_area > .header_cont > .info > li a{
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+}
+header > .header_area > .header_cont > nav{
+    float: left;
+    clear: both;
+    width: 1300px;
+    /* outline: 1px solid red; */
+    display: block;
+    margin-top: -24px;
+}
+header > .header_area > .header_cont > nav > .upper{
+    width:100%;
+    list-style: none;
+    /* outline: 1px solid red; */
+}
+header > .header_area > .header_cont > nav > .upper li{
+    float: left;
+    margin-left: 180px;
+}
+header > .header_area > .header_cont > nav > .upper li a{
+    font-size: 35px;    
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+#theme img{
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    z-index: -1;
+}
+#come{
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 5px;
+    letter-spacing: 4px;
+    color: black;
+    /* background-color: rgb(2, 2, 61); */
+    width: 1000px;
+    height: 50px;
+    z-index: 10;
+    text-align: center;
+    line-height: 50px;
+    margin: 0 auto;
+    border-bottom: 2px solid black;
+}
+
+.api{
+    width: 1200px;
+    margin: auto;
+    color: gray;
+    padding-top: 20px;
+}
+.api form{
+    float: left;
+    width: 30%;
+    /* outline: 1px solid red; */
+    padding: 10px;
+    box-sizing: border-box;
+}
+.api form button{
+    background-color: rgb(53, 46, 94);
+    color: white;
+    border-radius: 8px;
+    width: 140px;
+}
+.api .result{
+    float: left;
+    width: 70%;
+    /* outline: 1px solid red; */
+    padding-top: -20px;
+    padding-left: 10px;
+    margin-top: -60px;
+    box-sizing: border-box;
+}
+.clear{
+    clear: both;
+}
+
+
+footer{
+    width: 100%;
+    margin-top: 100px;
+    background-color: rgb(1, 1, 31);
+    color: white;
+    padding: 30px 30px 7px 30px;
+}
+footer > .foo{
+    width: 1500px;
+    height: 170px;
+    margin: 0 auto;
+    position: relative;
+    /* outline: 1px solid yellow; */
+}
+footer > .foo > .de{
+    width: 65%;
+    height: 100px;
+    /* outline: 1px solid rgb(214, 31, 31); */
+}
+footer > .foo > .de a{
+    color: white;
+    text-decoration: none;
+}
+footer > .foo > .sns{
+    width: 30%;
+    float: right;
+    /* outline: 1px solid yellow; */
+}
+footer > .foo > .sns > div{
+    position: absolute;
+    float: right;
+    top: 35px;
+    right: 10px;
+}
+footer > .foo > .sns > div > a{
+    margin-left: 30px;
+    
+}
+#sidebar{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 101;
+}
+#sidebar a{
+    color: white;
+    font-size: 0;
+}
+#sidebar img{
+    width: 40px;
+    background-color: #fff;
+    border-radius: 50%
+}
+
+/* 로그인 페이지 시작*/
+
+.modal {
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow: auto;
+
+    padding-top: 60px;
+
+    /* 처음에는 안보이게 한다 */
+    display: none;
+}
+
+.modal-content {
+    background-color: #464646;
+    width: 35%;
+    margin: 4% auto;
+    border: 1px solid #888;
+    border-radius: 5%;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 100px 0 50px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.close{
+    font-size: 45px;
+    font-weight: bold;
+    position: absolute;
+    right: 25px;
+    top: -95px;
+    color: #000;
+}
+.close:hover, .close:focus{
+    color: red;
+    cursor: pointer;
+}
+
+/* form */
+.container{
+    padding: 16px;
+    border-radius: 0 0 30px 30px;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+
+    box-sizing: border-box;
+}
+
+.cancelbtn{
+    width: auto;
+    padding: 10px 18px;
+    background-color: #db1002;
+    border-radius: 0 0 0 20px;
+}
+
+span.psw{
+    float: right;
+    padding-top: 16px;
+}
+
+@media screen and (max-width: 380px){
+    .cancelbtn{
+        width: 100%;
+    }
+    span.psw{
+        
+        display: block;
+        float: none;
+    }
+}
+.modal .container .sub{
+    margin-top: 7px;
+    width: 100px;
+    height: 30px;
+    background-color: ivory;
+}
+
+.animate{
+    animation: animatezoom 0.6s;
+}
+
+@keyframes animatezoom{
+    form {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* 로그인 페이지 끝*/
+@media screen and (max-width:1023px){
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+        }
+        #menu{
+            position: absolute;
+            top: 50px;
+            right: 20px;
+            display: block;
+        }
+        #come{
+            font-size: px;
+            font-weight: bold;
+            border-radius: 5px;
+            letter-spacing: 4px;
+            color: black;
+            /* background-color: rgb(2, 2, 61); */
+            width: 90%;
+            height: 50px;
+            z-index: 10;
+            text-align: center;
+            line-height: 50px;
+            margin: 0 auto;
+            border-bottom: 2px solid black;
+        }
+        #maps{
+            width: 100%;
+            margin: auto;
+        }
+        #maps #googleMap{
+            margin: 20px auto;
+            width: 90%;
+            height: 400px;
+        }
+        #maps #googleMap2{
+            margin: 20px auto;
+            width: 90%;
+            height: 400px;
+        }
+        #maps > h1{
+            text-align: left;
+            margin: 50px auto 10px 5%;
+            color: black;
+            font-weight: bold;
+        }
+        footer{
+            width: 100%;
+            margin-top: 100px;
+            background-color: rgb(1, 1, 31);
+            color: white;
+            padding: 30px 30px 7px 30px;
+        }
+        footer > .foo{
+            width: 1500px;
+            height: 270px;
+            margin: 0 auto;
+            position: relative;
+            /* outline: 1px solid yellow; */
+        }
+        footer > .foo > .de{
+            width: 100%;
+            height: 100px;
+            display: block;
+            float: left;
+            /* outline: 1px solid rgb(214, 31, 31); */
+        }
+        footer > .foo > .de a{
+            color: white;
+            text-decoration: none;
+        }
+        footer > .foo > .sns > div{
+            position: absolute;
+            width: 100%;
+            top: 190px;
+            left: -27px;
+        }
+
+
+
+        header > .header_area{
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+        }
+        header > .header_area > .header_cont{
+            float: right;
+        }
+
+        header > .header_area > .header_cont > nav{
+            float: right;
+            clear: both;
+            width: 60%;
+            /* outline: 1px solid red; */
+            display: block;
+            margin-top: -24px;
+        }
+        header > .header_area > .header_cont > nav > .upper{
+            width:100%;
+            list-style: none;
+            display: none;
+        }
+        header > .header_area > .header_cont > nav > .upper2{
+            width:100%;
+            list-style: none;
+            /* display: none; */
+        }
+
+        .sidenav {
+            padding-top: 15px;
+        }
+
+        .sidenav a {
+            font-size: 18px;
+        }
+    
+
+}
+@media screen and (max-width:768px){
+    footer > .foo > .sns{
+        display: none;
+    }
+    footer > .foo{
+        width: 1500px;
+        height: 180px;
+        margin: 0 auto;
+        position: relative;
+        /* outline: 1px solid yellow; */
+    }
+}

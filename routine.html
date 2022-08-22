@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Exercising is a must</title>
+<link rel="stylesheet" href="./css/routine.css">
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="header_area clear">
+                <!-- <a href="#" class="menubtn" onclick="w3_open()"></a> -->
+                <span id="menu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                <h1><a href="./index.html">health</a></h1>
+                <div class="header_cont">
+                    <ul class="info">
+                        <li><a href="#" id="login">로그인</a></li>
+                        <li><a href="#" id="new" onclick="already()">회원가입</a></li>
+                    </ul>
+                    <nav>
+                        <ul class="upper">
+                            <li><a href="./about.html" class="menubtn">About</a></li>
+                            <li><a href="#" onclick="already()" class="menubtn">Food</a></li>
+                            <li><a href="./api.html" class="menubtn">Community</a></li>
+                        </ul>
+                        <!-- <div id="mySidenav" class="sidenav">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <a href="#" onclick="already()" class="menubtn">WorkOut</a>
+                            <a href="#" onclick="already()" class="menubtn">Food</a>
+                            <a href="#" onclick="already()" class="menubtn">Comunity</a>
+                        </div> -->
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div id="theme"><img src="./imgs/batang.png" alt=""></div>
+        <div id="come" style="background-color: rgb(255, 255, 255);">웨이트 트레이닝</div>
+    </div>   
+    <div id="case">
+        <div class="board">
+            <div class="weight">
+                <button id="one">벤치프레스(Bench Press)</button>
+                <button id="two">데드리프트(Daed Lift)</button>
+                <button id="three">스쿼트(Squat)</button>
+                <button id="four">풀업(Pull Up)</button>
+                <button id="five">팔굽혀펴기(Push Up)</button>
+                <button id="six">밀리터리 프레스(Military Press)</button>
+                <button id="seven">덤벨 컬(Dumbbell Curl)</button>
+            </div>
+            <div class="exeInfo">
+                <p><img src="./imgs/bench.PNG" alt="" id="one1"></p>
+                <p><img src="./imgs/dead.PNG" alt="" id="two1"></p>
+                <p><img src="./imgs/squat.PNG" alt="" id="three1"></p>
+                <p><img src="./imgs/pull.PNG" alt="" id="four1"></p>
+                <p><img src="./imgs/push.PNG" alt="" id="five1"></p>
+                <p><img src="./imgs/military.PNG" alt="" id="six1"></p>
+                <p><img src="./imgs/dumbell aurl.PNG" alt="" id="seven1"></p>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <footer id="footer">
+        <div class="foo">
+            <div class="de">
+                <a href="#" onclick="already()">이용약관</a><span style="color: white;"> |</span>
+                <a href="#" onclick="already()">개인정보취급방침</a>
+                <h2>Exercising is a must</h2>
+                <p>서울특별시 강남구 테헤란로 146 현익빌딩 3,4층</p><p>/ 대표전화 02-1234-5678 / Email : health@exercise.com</p>
+                <p class="copy box_inner">
+                    Copyright&copy; Exercise is a must all right reserved
+                </p>
+            </div>
+            <div class="sns">
+                <div>
+                    <a href="#" onclick="already()"><img src="./imgs/ico_blog_r.png" alt=""></a>
+                    <a href="#" onclick="already()"><img src="./imgs/ico_facebook_r.png" alt=""></a>
+                    <a href="#" onclick="already()"><img src="./imgs/ico_instargram_r.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="sidebar">
+        <div><a href="#"><img src="./imgs/top.png" alt=""> top</a></div>
+    </div>
+
+        <div id="modal_box" class="modal">
+		<form class="modal-content animate" action="https://www.w3schools.com/action_page.php" method="post">
+			<div class="imgcontainer">
+				<span class="close" title="Close Modal">&times;</span>
+				<img src="./imgs/loginicon.jpg" alt="Avatar" class="avatar">
+			</div>
+
+			<div class="container">
+				<label for="uname" style="color: darkgray;"><b>Username</b></label>
+				<input type="text" id="uname" name="uname" placeholder="Enter Username" required>
+				<label for="psw" style="color: darkgray;"><b>Password</b></label>
+				<input type="password" id="psw" name="psw" placeholder="Enter Password" required>
+                <button type="submit" class="sub">Login</button>
+				<label>
+					<input type="checkbox" checked="checked" name="remember"> Remember me
+				</label>
+			</div>
+			<div class="container" style="background-color:#5e5b5b">
+				<button type="button" class="cancelbtn">Cancel</button>
+				<span class="psw">Forgot <a href="#">Information?</a></span>
+			</div>
+		</form>
+	</div>
+
+<script src="./JavaScript/slide copy 2.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnI-s6cCfyDX_I9p-6wto7nHUi3jKaWQ8&callback=myMap"></script>
+</body>
+</html>

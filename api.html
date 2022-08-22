@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Exercising is a must</title>
+<link rel="stylesheet" href="./css/api.css">
+<style>
+table,th,td {
+    border : 1px solid rgb(54, 53, 53);
+    border-collapse: collapse;
+}
+th,td {
+    padding: 4px;
+}
+</style>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="header_area clear">
+                <!-- <a href="#" class="menubtn" onclick="w3_open()"></a> -->
+                <h1><a href="./index.html">health</a></h1>
+                <div class="header_cont">
+                    <ul class="info">
+                        <li><a href="#" id="login">로그인</a></li>
+                        <li><a href="#" id="new" onclick="already()">회원가입</a></li>
+                    </ul>
+                    <nav>
+                        <ul class="upper">
+                            <li><a href="./about.html" class="menubtn">About</a></li>
+                            <li><a href="./routine.html" class="menubtn">WorkOut</a></li>
+                            <li><a href="#" onclick="already()" class="menubtn">Food</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div id="theme"><img src="./imgs/batang.png" alt=""></div>
+        <div id="come" style="background-color: rgb(255, 255, 255);">서울특별시 체육시설 정보</div>
+    </div> 
+    <div class="api">
+        <h3>검색할 페이지 설정</h3>
+        <form>
+            <p>페이징 시작번호 : <input type="number" name="START_INDEX" id="START_INDEX"></p>
+            <p>페이징 끝 번호 : <input name="number" id="END_INDEX" id="END_INDEX" style="width: 100PX;"></p>
+            <button id="btn_load" type="button">정보 가져오기</button>
+            <button id="btn_remove" type="button">지우기</button>
+        </form>
+        <div class="result">
+            <h2>검색결과</h2>
+            <table id="demoJSON"></table>
+        </div>
+    </div>  
+
+    <div class="clear"></div>
+    <footer id="footer">
+        <div class="foo">
+            <div class="de">
+                <a href="#" onclick="already()">이용약관</a><span style="color: white;"> |</span>
+                <a href="#" onclick="already()">개인정보취급방침</a>
+                <h2>Exercising is a must</h2>
+                <p>서울특별시 강남구 테헤란로 146 현익빌딩 3,4층</p><p>/ 대표전화 02-1234-5678 / Email : health@exercise.com</p>
+                <p class="copy box_inner">
+                    Copyright&copy; Exercise is a must all right reserved
+                </p>
+            </div>
+            <div class="sns">
+                <div>
+                    <a href="#" onclick="already()"><img src="./imgs/ico_blog_r.png" alt=""></a>
+                    <a href="#" onclick="already()"><img src="./imgs/ico_facebook_r.png" alt=""></a>
+                    <a href="#" onclick="already()"><img src="./imgs/ico_instargram_r.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="sidebar">
+        <div><a href="#"><img src="./imgs/top.png" alt=""> top</a></div>
+    </div>
+
+    <div id="modal_box" class="modal">
+		<form class="modal-content animate" action="https://www.w3schools.com/action_page.php" method="post">
+			<div class="imgcontainer">
+				<span class="close" title="Close Modal">&times;</span>
+				<img src="./imgs/loginicon.jpg" alt="Avatar" class="avatar">
+			</div>
+
+			<div class="container">
+				<label for="uname" style="color: darkgray;"><b>Username</b></label>
+				<input type="text" id="uname" name="uname" placeholder="Enter Username" required>
+				<label for="psw" style="color: darkgray;"><b>Password</b></label>
+				<input type="password" id="psw" name="psw" placeholder="Enter Password" required>
+                <button type="submit" class="sub">Login</button>
+				<label>
+					<input type="checkbox" checked="checked" name="remember"> Remember me
+				</label>
+			</div>
+			<div class="container" style="background-color:#5e5b5b">
+				<button type="button" class="cancelbtn">Cancel</button>
+				<span class="psw">Forgot <a href="#">Information?</a></span>
+			</div>
+		</form>
+	</div>
+
+
+<script src="./JavaScript/slide copy 3.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnI-s6cCfyDX_I9p-6wto7nHUi3jKaWQ8&callback=myMap"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+function already(){
+    alert("준비중인 페이지입니다.")
+}
+
+var modal_box = document.getElementById('modal_box');
+var btn_login = document.getElementById('login');
+var btn_close = document.getElementsByClassName("close")[0];
+var btn_cancel = document.getElementsByClassName("cancelbtn")[0];
+
+btn_login.onclick = function(){modal_box.style.display = "block"}
+btn_close.onclick = function(){modal_box.style.display = "none"}
+btn_cancel.onclick = function(){modal_box.style.display = "none"}
+
+window.onclick = function(event){
+    if(event.target == modal_box){
+        modal_box.style.display = "none"
+    }
+}
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
+function myMap() {
+	var mapProp = {
+		center: new google.maps.LatLng(37.50003533841325, 127.03558519438549), zoom: 17,}
+    var mapProp2 = {
+        center: new google.maps.LatLng(37.555277430011685, 126.9355793079038), zoom: 17,}
+	var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+	var myPos1 = {lat: 37.50003533841325, lng: 127.03558519438549};
+	var marker1 = new google.maps.Marker({position: myPos1});
+	marker1.setMap(map);
+	google.maps.event.addListener(marker1, 'click', function(){
+		map.setZoom(map.getZoom() - 1);  
+		map.setCenter(marker1.getPosition());
+	});
+    var map = new google.maps.Map(document.getElementById("googleMap2"), mapProp2);
+	var myPos2 = {lat: 37.555277430011685, lng: 126.9355793079038};
+	var marker2 = new google.maps.Marker({position: myPos2});
+	marker2.setMap(map);
+	google.maps.event.addListener(marker2, 'click', function(){
+		map.setZoom(map.getZoom() - 1);  
+		map.setCenter(marker1.getPosition());
+	});
+
+}

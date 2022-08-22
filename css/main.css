@@ -1,0 +1,802 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: rgb(7, 7, 7);
+}
+.cl{
+    clear: none;
+}
+#wrap{
+    position: relative;
+}
+#wrap > .head{
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    /* margin: 0 auto; */
+    z-index: 100;
+}
+#wrap .head header{
+    margin: 0 auto;
+    position: relative;
+    width: 1500px;
+}
+#wrap .head h2 a{
+    position: absolute;
+    top: 14px;
+    left: 5%;
+    font-size: 0;
+    height: 70px;
+    width: 70px;
+    background: url(../imgs/main_icon.png) no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+
+#wrap .header_area .info{
+    position: absolute;
+    right: 20px;
+    top: 0;
+    list-style: none;
+    float: left;
+}
+#wrap .header_area .info li{
+    float: left;
+    margin: 5px 5px;
+    font-style: none;
+}
+#wrap .header_area .info li a:hover{
+    color: rgb(247, 54, 54);
+}
+#wrap .header_area .info li:first-child::after{
+    content: '|';
+    display: inline-block;
+    color: white;
+    margin-left: 10px;
+}
+#wrap .header_area .info li a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+#wrap nav{
+    position: absolute;
+    /* top: 20px; */
+    line-height: 90px;
+    left: 400px;
+    float: left;
+}
+#wrap nav ul{
+    float: left;
+    /* margin-right: 80px; */
+    width: 150px;
+    text-align: center;
+    
+}
+#wrap nav ul a{
+    /* float: left; */
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 25px;
+    font-weight: bold;
+}
+#wrap nav ul a:hover{
+    color: darkgray;
+}
+#mainttl{
+    background-color: lightgray;
+    height: auto;
+}
+
+/* 메인 슬라이드 영역 시작*/
+.mySlides {
+    display: none;
+    height: 700px;
+    background-size: contain;
+    text-align: center;
+}
+
+.mySlides img {
+    vertical-align: middle;
+}
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.fade {
+
+    animation-name: fade;
+    animation-duration: 2.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+/* 메인 슬라이드 영역 끝*/
+
+/* 메인내용? 시작 */
+
+#mainDescript{
+    position: relative;
+    text-align: center;
+    width: 1500px;
+    margin: 0 auto;
+    padding-left: 40px;
+}
+#mainDescript div{
+    float: left;
+    width: 30%;
+    margin: 0 20px;
+}
+#mainDescript .desc img{
+    width: 100%;
+    margin-top: 110px;
+    /* border: 2px solid black; */
+    border-radius: 10%;
+}
+#mainDescript .desc h3,p{
+    color: white;
+    margin-top: 10px;
+}
+#mainDescript .desc a{
+    color: white;
+    margin-top: 15px;
+    display: inline-block;
+    background: gray;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-decoration: none;
+    border-radius: 7px;
+}
+/* 메인내용? 끝 */
+
+/* 소식 등 시작 */
+
+#botContainer{
+    clear: both;
+    text-align: center;
+    width: 1500px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 350px;
+    position: relative;
+}
+#interview{
+    width: 30%;
+    height: 230px;
+    margin-left: 50px;
+    margin-top: 50px;
+    box-sizing: border-box;
+    /* background-color: rgb(29, 29, 29); */
+    background-size: cover;
+    border-radius: 35px;
+    float: left;
+    border: 1px solid white;
+}
+#interview p{
+    float: left;
+    text-align: center;
+}
+#interview p{
+    width: 100%;
+    text-align: center;
+}
+#interview .kakao{
+    height: 100px;
+    width: 50%;
+    float: left;
+}
+#interview .kakao a{
+    background: url(../imgs/kakao.png) no-repeat;
+    background-size: cover;
+    display: block;
+    margin: 60px auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+}
+#interview .call{
+    height: 100px;
+    width: 49%;
+    float: left;
+}
+#interview .call a{
+    background: url(../imgs/call.jpg) no-repeat;
+    background-size: cover;
+    display: block;
+    margin: 60px auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+}
+#notice{
+    width: 65%;    
+    float: right;
+    margin-left: 25px;
+    margin-top: -5px;
+}
+#notice h2{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#notice > div {
+    width: 100%;
+    text-align: center;
+}
+#notice .Machine p{
+    float: left;
+    width: 20%;
+}
+#notice .Machine a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+#notice .Machine img{
+    width: 150px;
+    height: 150px;
+    margin: 30px auto;
+    border-radius: 20px;
+}
+#bgcc{
+    background-color: rgba(255, 255, 255, 0.959);
+    width: 100%;
+    height: 500px;
+    z-index: -10;
+    top: -500px;
+}
+#bgcc2{
+    clear: both;
+}
+/* 소식 끝 */
+/* footer 시작 */
+
+#footer{
+    background-color: rgba(48, 46, 46, 0.349);
+    width: 100%;
+    height: 150px;
+    padding: 20px 0 1px;
+    position: relative;
+}
+#footer .de{
+    width: 1400px;
+    /* outline: 1px solid red; */
+    margin: 0.4% 0 0 8%;
+    float: left;
+}
+#footer .dede{
+    margin-bottom: 10px;
+}
+#footer .dede a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+#footer h2{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+#footer p {
+    margin-top: 1px;
+}
+#sns{
+    position: absolute;
+    float: right;
+    right: 40px;
+    margin-top: 40px;
+    margin-right: 20px;
+}
+#sns a{
+    margin-left: 50px;
+}
+
+/* footer 끝 */
+/* sidebar 시작 */
+
+#sidebar{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 101;
+}
+#sidebar a{
+    color: white;
+    font-size: 0;
+}
+#sidebar img{
+    width: 40px;
+    background-color: #fff;
+    border-radius: 50%
+}
+
+/* sidebar 끝 */
+/* 로그인 페이지 시작*/
+
+.modal {
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow: auto;
+
+    padding-top: 60px;
+
+    /* 처음에는 안보이게 한다 */
+    display: none;
+}
+
+.modal-content {
+    background-color: #464646;
+    width: 35%;
+    margin: 4% auto;
+    border: 1px solid #888;
+    border-radius: 5%;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 100px 0 50px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.close{
+    font-size: 45px;
+    font-weight: bold;
+    position: absolute;
+    right: 25px;
+    top: -95px;
+    color: #000;
+}
+.close:hover, .close:focus{
+    color: red;
+    cursor: pointer;
+}
+
+/* form */
+.container{
+    padding: 16px;
+    border-radius: 0 0 30px 30px;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+
+    box-sizing: border-box;
+}
+
+.cancelbtn{
+    width: auto;
+    padding: 10px 18px;
+    background-color: #db1002;
+    border-radius: 0 0 0 20px;
+}
+
+span.psw{
+    float: right;
+    padding-top: 16px;
+}
+
+@media screen and (max-width: 380px){
+    .cancelbtn{
+        width: 100%;
+    }
+    span.psw{
+        
+        display: block;
+        float: none;
+    }
+}
+.modal .container .sub{
+    margin-top: 7px;
+    width: 100px;
+    height: 30px;
+    background-color: ivory;
+}
+
+.animate{
+    animation: animatezoom 0.6s;
+}
+
+@keyframes animatezoom{
+    form {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* 로그인 페이지 끝*/
+
+
+
+@media screen and (max-width:1023px){
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+        }
+    #sns{
+        position: absolute;
+        float: right;
+        right: 20px;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+    #sns a{
+        margin-left: 30px;
+        }
+        
+    #wrap nav{
+        position: absolute;
+        top: -10px;
+        line-height: 90px;
+        left: 40%;
+        float: left;
+    }
+    #wrap nav ul{
+        float: left;
+        /* margin-right: 80px; */
+        width: 140px;
+        height: 40px;
+        text-align: center;
+        /* outline: 1px solid red; */
+    }
+    #wrap nav ul+ul+ul{
+        clear: both;
+        float: left;
+        /* margin-right: 80px; */
+        width: 130px;
+        height: 40px;
+        text-align: center;
+        margin-top: -5px;
+    }
+    #wrap nav ul+ul+ul+ul{
+        float: right;
+        /* margin-right: 80px; */
+        width: 130px;
+        height: 40px;
+        text-align: center;
+        margin-top: -40px;
+    }
+
+    #wrap nav ul a{
+        /* float: left; */
+        color: white;
+        text-decoration: none;
+        letter-spacing: 1px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #wrap nav ul a:hover{
+        color: darkgray;
+    }
+    #wrap{
+        width: 100%;
+    }
+    #wrap .head header{
+        width: 100%;
+    }
+    #wrap .head h2 a{
+        position: fixed;
+        left: 2%;
+        width: 100%;
+        background: url(../imgs/main_icon.png) no-repeat;
+        background-size: contain;
+        margin: 0 auto;
+    }
+
+    #wrap .head h2 a::after{
+        position: absolute;
+        content: "Exercising is a must";
+        color: white;
+        font-size: 25px;
+        display: block;
+        margin-left: 80px;
+        width: 100%;
+        line-height: 65px;
+    }
+    #mainDescript{
+        position: relative;
+        text-align: center;
+        width: 100%;
+    }
+    #mainDescript .desc{
+        width: 60%;
+        padding: 1% 12%;
+        padding-bottom: 0px;
+
+    }
+    #bgcc{
+        height: 0;
+    }
+    #botContainer{
+        clear: both;
+        text-align: center;
+        width: 100%;
+        height: 400px;
+        margin: 0 auto;
+        margin-top: 350px;
+        position: relative;
+    }
+    #interview{
+        width: 80%;
+        height: 230px;
+        box-sizing: border-box;
+        margin: 80px 40px 40px 85px;
+        /* background-color: rgb(29, 29, 29); */
+        background-size: cover;
+        border-radius: 35px;
+        border: 1px solid white;
+    }
+    #interview p{
+        float: left;
+        text-align: center;
+    }
+    #interview .kakao{
+        height: 100px;
+        width: 50%;
+        float: left;
+    }
+    #interview .kakao a{
+        background: url(../imgs/kakao.png) no-repeat;
+        background-size: cover;
+        display: block;
+        margin: 60px auto;
+        width: 150px;
+        height: 150px;
+        border-radius: 20px;
+    }
+    #interview .call{
+        height: 100px;
+        width: 49%;
+        float: left;
+    }
+    #interview .call a{
+        background: url(../imgs/call.jpg) no-repeat;
+        background-size: cover;
+        display: block;
+        margin: 60px auto;
+        width: 150px;
+        height: 150px;
+        border-radius: 20px;
+    }
+    #notice{
+        width: 100%;    
+        float: right;
+        margin-left: 25px;
+        margin-top: -5px;
+    }
+    #notice h2{
+        color: white;
+        font-size: 25px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    #notice > div {
+        width: 100%;
+        text-align: center;
+    }
+    #notice .Machine{
+        width: 100%;
+        margin: 10px auto;
+    }
+    #notice .Machine p a{
+        display: none;
+    }
+    #notice .Machine p:first-child{
+        float: left;
+        width: 40%;
+        margin-left: 10%;
+    }
+    #notice .Machine p+p{
+        float: left;
+        width: 40%;
+    }
+    #notice .Machine p+p+p{
+        float: left;
+        width: 30%;
+        margin-left: 2.4%;
+    }
+    #notice .Machine p+p+p+p{
+        float: left;
+        width: 30%;
+    }
+    #notice .Machine p:last-child{
+        float: left;
+        width: 30%;
+    }
+    #notice .Machine a{
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #notice .Machine img{
+        width: 80%;
+        height: 80%;
+        margin: 30px auto;
+        border-radius: 20px;
+    }
+    #footer{
+        background-color: rgba(48, 46, 46, 0.349);
+        width: 100%;
+        height: 110px;
+        padding: 5px 0 20px;
+    }
+    #footer .de{
+        width: 100%;
+        margin: 15px 0 15px 6%;
+    }
+    #footer .dede{
+        margin-bottom: 8px;
+    }
+    #footer .dede a{
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    #footer h2{
+        color: white;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    #footer p {
+        margin-top: 1px;
+        font-size: 10px;
+    }
+    #sidebar{
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        z-index: 101;
+    }
+    #sidebar a{
+        color: white;
+        font-size: 0;
+    }
+    #sidebar img{
+        width: 30px;
+        background-color: #fff;
+        border-radius: 50%
+        
+}}
+
+@media screen and (max-width:768px){
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+        }
+        
+    #wrap nav{
+        position: absolute;
+        top: -5px;
+        line-height: 90px;
+        left: 20%;
+        float: left;
+    }
+    #wrap nav ul{
+        float: left;
+        /* margin-right: 80px; */
+        width: 130px;
+        height: 30px;
+        text-align: center;
+    }
+    .cl{
+        clear: both;
+    }
+    #wrap{
+        width: 100%;
+    }
+    #wrap .head header{
+        width: 100%;
+    }
+    #wrap .head h2 a{
+        position: fixed;
+        left: 2%;
+        width: 100%;
+        background: url(../imgs/main_icon.png) no-repeat;
+        background-size: contain;
+        margin: 0 auto;
+    }
+
+    #wrap .head h2 a::after{
+        position: absolute;
+        content: "";
+    }
+    #mainDescript{
+        position: relative;
+        text-align: center;
+        width: 100%;
+    }
+    #mainDescript .desc{
+        width: 50%;
+        padding: 1% 12% 0 16%;
+        padding-bottom: 0px;
+
+    }
+    #bgcc{
+        height: 0;
+    }
+    #botContainer{
+        clear: both;
+        text-align: center;
+        width: 100%;
+        height: 400px;
+        margin: 0 auto;
+        margin-top: 350px;
+        position: relative;
+    }
+    #interview{
+        width: 80%;
+        height: 230px;
+        box-sizing: border-box;
+        margin: 80px 4% 40px 10%;
+        /* background-color: rgb(29, 29, 29); */
+        background-size: cover;
+        border-radius: 35px;
+        border: 1px solid white;
+    }
+    #interview p{
+        float: left;
+        text-align: center;
+    }
+    #interview .kakao{
+        height: 100px;
+        width: 50%;
+        float: left;
+    }
+    #interview .kakao a{
+        background: url(../imgs/kakao.png) no-repeat;
+        background-size: cover;
+        display: block;
+        margin: 60px auto;
+        width: 150px;
+        height: 150px;
+        border-radius: 20px;
+    }
+    #interview .call{
+        height: 100px;
+        width: 49%;
+        float: left;
+    }
+    #interview .call a{
+        background: url(../imgs/call.jpg) no-repeat;
+        background-size: cover;
+        display: block;
+        margin: 60px auto;
+        width: 150px;
+        height: 150px;
+        border-radius: 20px;
+    }
+    #footer > #sns{
+        display: none;
+    }
+}

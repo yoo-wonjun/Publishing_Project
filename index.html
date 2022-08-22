@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang='ko'>
+<head>
+<meta charset="UTF-8">
+<title>Exercising is a must</title>
+<link rel="stylesheet" href="./css/main.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div id="wrap">
+        <div class="head" id="head">
+            <header>
+                <h2><a href="#">Health!!</a></h2>
+                <div class="header_area">
+                    <ul class="info">
+                        <li><a href="#" id="login">로그인</a></li>
+                        <li><a href="#" id="new" onclick="already()">회원가입</a></li>
+                    </ul>
+                    <nav>
+                        <ul class="clear"><a href="./about.html">About</a></ul>
+                        <ul class="clear"><a href="./routine.html">WorkOut</a></ul>
+                        <!-- <div class="cl"></div> -->
+                        <ul class="clear"><a href="#" onclick="already()">Food</a></ul>
+                        <ul class="clear"><a href="./api.html">Community</a></ul>
+                    </nav>
+                    
+                </div>
+            </header>
+        </div>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <!-- <img src="./imgs/picture_1.png" style="width:100%; height:600px"> -->
+                <img src="/man-gb525cdfc0_1920.jpg" style="width:100%; height:600px">
+            </div>
+            <div class="mySlides fade">
+                <!-- <img src="./imgs/picture_2.jpg" style="width:100%; height:600px"> -->
+                <img src="/abs-g3e4c15763_1920 2.jpg" style="width:100%; height:600px">
+            </div>
+            <div class="mySlides fade">
+                <!-- <img src="./imgs/picture_3.jpg" style="width:100%; height:600px"> -->
+                <img src="/crossfit-gc64dbc030_1920 3.jpg" style="width:100%; height:600px">
+            </div>
+            <div class="mySlides fade">
+                <!-- <img src="./imgs/picture_4.jpg" style="width:100%; height:600px"> -->
+                <img src="/crossfit-g50685ff8d_192 4.jpg" style="width:100%; height:600px">
+            </div>
+        </div>
+        <br>
+    
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        <h2 style="color:white; text-align: center; margin-bottom: 100px; margin-top: -30px; font-size: 50px;">We will take care of your body.</h2>
+        <!-- <div class="clcl"></div> -->
+        <div id="mainDescript">
+            <div class="routine desc">
+                <img src="./imgs/routine.jpg" alt="routine">
+                <h3>운동 루틴<small>(Exercise Routine)</small></h3>
+                <p>웨이트 트레이닝의 분할 운동법 소개</p>
+                <a href="./routine.html">상세보기</a>
+            </div>
+            <div class="menu desc">
+                <img src="./imgs/food.jpg" alt="menu">
+                <h3>식단<small>(Exercise Menu)</small></h3>
+                <p>영양적이며 효율적인 식단 소개</p>
+                <a href="#">상세보기</a>
+            </div>
+            <div class="supplement desc">
+                <img src="./imgs/supplement.jpg" alt="supplement">
+                <h3>운동 보충제<small>(Exercise Supplement)</small></h3>
+                <p>운동시 효과적인 근력 향상을 위한 보충제 소개</p>
+                <a href="#">상세보기</a>
+            </div>
+        </div>
+        <div id="bgcc"></div>
+        
+        <div id="botContainer">   
+            <div id="interview">
+                <div class="kakao"><p>카카오톡 상담</p><a href="#" onclick="already()"></a></div>
+                <div class="call"><p>전화 상담</p><a href="#" onclick="already()"></a></div>
+            </div>
+            <div id="notice">
+                <h2>운동기구 안내(판매)</h2>
+                <div class="Machine">
+                    <p><a href="#" onclick="already()">런닝머신</a><img src="./imgs/running.jpg" alt="running"></p>
+                    <p><a href="#" onclick="already()">파워랙</a><img src="./imgs/power.jpg" alt="running"></p>
+                    <p><a href="#" onclick="already()">사이클머신</a><img src="./imgs/cycle.jpg" alt="running"></p>
+                    <p><a href="#" onclick="already()">랫풀다운 기구</a><img src="./imgs/letpull.jpg" alt="running"></p>
+                    <p><a href="#" onclick="already()">덤벨 및 바벨, 원판</a><img src="./imgs/dumbell.jpg" alt="running"></p>
+                </div>
+            </div>
+        </div>
+        <div id="bgcc2"></div>
+        <footer id="footer">
+            <div class="de">
+                <div class="dede">
+                    <a href="#" onclick="already()">이용약관</a><span style="color: white;"> |</span>
+                    <a href="#" onclick="already()">개인정보취급방침</a>
+                </div>
+                <div class="dedede">
+                    <h2>Exercising is a must</h2>
+                    <p>서울특별시 강남구 테헤란로 146 현익빌딩 3,4층 / 대표전화 02-1234-5678 / Email : health@exercise.com</p>
+                    <p class="copy box_inner">
+                        Copyright&copy; Exercise is a must all right reserved
+                    </p>
+                </div>
+            </div>
+            <div id="sns">
+                <div>
+                    <a href="#" id="asd"><img src="./imgs/ico_blog_r.png" alt=""></a>
+                    <a href="#" onclick="already()"><img src="./imgs/ico_facebook_r.png" alt=""></a>
+                    <a href="#" onclick="already()"><img src="./imgs/ico_instargram_r.png" alt=""></a>
+                </div>
+            </div>
+        </footer>
+        <div id="sidebar">
+            <div><a href="#"><img src="./imgs/top.png" alt=""> top</a></div>
+        </div>
+    </div>
+
+    <div id="modal_box" class="modal">
+		<form class="modal-content animate" action="https://www.w3schools.com/action_page.php" method="post">
+			<div class="imgcontainer">
+				<span class="close" title="Close Modal">&times;</span>
+				<img src="./imgs/loginicon.jpg" alt="Avatar" class="avatar">
+			</div>
+
+			<div class="container">
+				<label for="uname" style="color: darkgray;"><b>Username</b></label>
+				<input type="text" id="uname" name="uname" placeholder="Enter Username" required>
+				<label for="psw" style="color: darkgray;"><b>Password</b></label>
+				<input type="password" id="psw" name="psw" placeholder="Enter Password" required>
+                <button type="submit" class="sub">Login</button>
+				<label>
+					<input type="checkbox" checked="checked" name="remember"> Remember me
+				</label>
+			</div>
+			<div class="container" style="background-color:#5e5b5b">
+				<button type="button" class="cancelbtn">Cancel</button>
+				<span class="psw">Forgot <a href="#">Information?</a></span>
+			</div>
+		</form>
+	</div>
+
+
+    <script src="./JavaScript/slide.js"></script>
+</body>
+</html>
